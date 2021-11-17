@@ -15,7 +15,7 @@ type Shape interface {
 	RotateAt(r, cx, cy float64) // cx,cy origin of rotation
 	SetRotation(r, cx, cy float64)
 
-	Scale(f int) // scales shape by factor
+	Scale(f float64) // scales shape by factor
 
 	OutCircle() (x, y, r float64)          // A Circle that fully encloses the shape
 	BoundingBox() (x1, y1, x2, y2 float64) // Bounding Box of Shape
@@ -29,7 +29,7 @@ type Shape interface {
 
 	Contains(x, y float64) (contains bool) // Checks if shape contains point.
 
-	IntersectionsWithRay(x, y, dx, dy float64) []Point // Checks if shape intersects with ray. Points of intersecions are returned
+	// IntersectionsWithRay(x, y, dx, dy float64) []Point // Checks if shape intersects with ray. Points of intersecions are returned
 }
 
 // Custom Shapes must implement these Move, Rotate, Scale, BoundingBox, CollidesWith

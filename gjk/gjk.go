@@ -21,6 +21,6 @@ func Support(shapeA, shapeB shape.Shape, dx, dy float64) (sx, sy float64) {
 }
 
 // Return closest edge to the origin
-func ClosestEdge() {
-	// Simplex Implementation Cusomt GO
-}
+// func ClosestEdge() {
+// 	// Simplex Implementation Cusomt GO
+// }

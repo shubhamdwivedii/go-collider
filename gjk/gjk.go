@@ -20,7 +20,7 @@ func Support(shapeA, shapeB shape.Shape, dx, dy float64) (sx, sy float64) {
 	return vector.Sub(ax, ay, bx, by)
 }
 
-// // Return closest edge to the origin
-// func ClosestEdge(n) {
-
-// }
+// Return closest edge to the origin
+func ClosestEdge() {
+	// Simplex Implementation Cusomt GO
+}
